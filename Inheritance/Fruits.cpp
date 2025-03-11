@@ -6,19 +6,70 @@
 #include<iostream>
 using namespace std;
 
-
-class Fruit{
-    public:
-    int num;
-
-    void addFruit(int count){
-        num+=count;
-    }
+class Fruits{
+    protected:
+    int totalFruit;
     
-    int getTotal()
+    public:
+    Fruits():totalFruit(0){} //intializes total fruit to 0
+    
+    void addFruit(int count){
+        totalFruit+=count;
+    }
 
+    int getTotalFruit(){
+        return totalFruit;
+    }
 };
 
-class Apples:{
+class Apple: public Fruits{
+    private:
+    int appleCount;
 
+    public:
+    Apple(int count){
+        appleCount=count;
+        addFruit(count);
+    }
+
+    void display(){
+        cout<<"Number of Apples: "<<appleCount<<endl;
+    }
 };
+
+class Mango:public Fruits{
+    private:
+    int mangoCount;
+
+    public:
+    Mango(int count){
+        mangoCount=count;
+        addFruit(count);
+    }
+
+    void display(){
+        cout<<"Number of Mangoes: "<<mangoCount<<endl;
+    }
+};
+
+int main(){
+    Fruits();
+
+    int appleCount,mangoCount;
+
+    cout<<"Enter number of Apples: ";
+    cin>>appleCount;
+    
+    cout<<"Enter number of Mangoes: ";
+    cin>>mangoCount;
+
+    Apple app(appleCount);
+    Mango man(mangoCount);
+
+    app.display();
+    man.display();
+
+    cout<<"Total Fruits in Basket: "<<appleCount+mangoCount<<endl;
+
+    return 0;
+}
