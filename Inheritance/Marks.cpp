@@ -3,7 +3,7 @@
  entered by the user. Create a class named Marks with data members for roll number, name and
  marks. Create three other classes inheriting the Marks class, namely Physics, Chemistry and
  Mathematics, which are used to define marks in individual subject of each student.*/
- 
+
 #include <iostream>
 #include <string>
 
