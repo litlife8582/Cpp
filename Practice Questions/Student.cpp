@@ -27,7 +27,6 @@ class Student{
         cout<<"Enter the Name: ";
         cin.ignore();
         getline(cin,name);
-        cin>>name;
         cout<<"Enter the age:";
         cin>>age;
     }
