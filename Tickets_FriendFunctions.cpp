@@ -47,7 +47,7 @@ void cancelReservation(Reservation& res,const Ticket& ticket){
         }
     }
     if(!found){
-        cout<<"Ticket with ID"<<ticket.getId()<<" not found in the reservation."<<endl;
+        cout<<"Ticket with ID "<<ticket.getId()<<" not found in the reservation."<<endl;
     }
 }
 
