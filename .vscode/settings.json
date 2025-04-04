@@ -3,6 +3,7 @@
     "pieces.telemetry": true,
     "files.associations": {
         "iostream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
