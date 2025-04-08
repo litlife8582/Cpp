@@ -5,6 +5,7 @@ Class Account: base class with account number, name, balance.
 Class SavingsAccount: inherits Account, adds interest rate.
 Class CurrentAccount: inherits Account, adds overdraft limit.
 Class PremiumSavings: inherits from SavingsAccount, adds loyalty bonus.
+
 Tasks:
 Override the calculateInterest() method differently for each class.
 Use super to access parent class methods.
